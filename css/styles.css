@@ -1,0 +1,549 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+li {
+  list-style: none;
+}
+
+/* =============================================================================
+      My CSS
+      ========================================================================== */
+/* ---- base ---- */
+.particles-js-canvas-el {
+  position: fixed;
+  z-index: -999;
+}
+
+html, body, main {
+  background-color: #b1b1b1;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+}
+
+#particles-js {
+  height: 100%;
+}
+
+.menu {
+  background-color: #152736;
+  z-index: 99999;
+  position: fixed;
+  width: 100vw;
+}
+
+.menu ul {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu ul li {
+  padding: 15px;
+  color: white;
+}
+
+.menu ul li:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  margin-top: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.banner h1 {
+  color: #152736;
+  font-size: 3rem;
+  font-weight: lighter;
+  position: relative;
+}
+
+.banner h2 {
+  color: #152736;
+  font-size: 2rem;
+}
+
+.banner h3 {
+  color: #152736;
+  margin-bottom: 5px;
+}
+
+.banner p {
+  color: #152736;
+  margin-top: 0 auto;
+  font-size: 1rem;
+  margin: 15px auto;
+  text-align: center;
+  position: relative;
+}
+
+.banner div {
+  width: 15rem;
+  height: auto;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.banner div img {
+  width: 100%;
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 36rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  width: 100vw;
+  height: auto;
+}
+
+.skills img {
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+  text-align: center;
+  padding: 1rem;
+}
+
+.skills h2 {
+  text-align: center;
+  margin-top: 0 auto;
+  color: #152736;
+  font-size: 1.5rem;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.skills #skills-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.hobbies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 46rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  width: 100vw;
+  height: auto;
+}
+
+.hobbies img {
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+  text-align: center;
+  padding: 1rem;
+}
+
+.hobbies h2 {
+  text-align: center;
+  margin-top: 0 auto;
+  color: #152736;
+  font-size: 1.5rem;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.hobbies #hobbies-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.formacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 57rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  width: 100vw;
+  height: auto;
+}
+
+.formacion img {
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+  text-align: center;
+  padding: 1rem;
+}
+
+.formacion h2 {
+  text-align: center;
+  margin-top: 0 auto;
+  color: #152736;
+  font-size: 1.5rem;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.formacion #formacion-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formacion p {
+  color: #152736;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.formacion div {
+  margin-right: 20px;
+  text-align: center;
+}
+
+.proyectos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  margin-top: 70rem;
+  width: 100vw;
+}
+
+.proyectos h2 {
+  text-align: center;
+  margin-top: 0 auto;
+  color: #152736;
+  font-size: 1.5rem;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.container .card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  height: 25rem;
+  position: relative;
+}
+
+.container .card .card__head {
+  color: white;
+  background: #152736;
+  padding: 0.5em;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  min-width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1em;
+  white-space: nowrap;
+}
+
+.container .card:hover {
+  -webkit-box-flex: 10;
+      -ms-flex-positive: 10;
+          flex-grow: 10;
+}
+
+.container .card:hover img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.container .card:hover .card__head {
+  text-align: center;
+  top: calc(100% - 2em);
+  color: #000;
+  background: rgba(238, 255, 0, 0.5);
+  font-size: 2em;
+  -webkit-transform: rotate(0deg) skew(-5deg);
+          transform: rotate(0deg) skew(-5deg);
+}
+
+.container .card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.container .card:not(:nth-child(5)) {
+  margin-right: 1em;
+}
+
+.contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  margin-top: 100rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  width: 100vw;
+}
+
+.contacto div {
+  width: 40px;
+  height: auto;
+}
+
+.contacto div img {
+  width: 100%;
+  height: auto;
+}
+
+.contacto h2, .contacto label {
+  text-align: center;
+  margin-top: 5px;
+  color: #152736;
+  font-size: 1.5rem;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.contacto form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacto input {
+  height: 1.5rem;
+  width: 15rem;
+}
+
+.contacto #button-enviar {
+  width: 15rem;
+  height: 3rem;
+  margin: 15px auto;
+  border-radius: 10px solid;
+  background-color: #152736;
+  color: white;
+}
+
+footer {
+  position: absolute;
+  margin-top: 138rem;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+
+footer h6 {
+  color: #152736;
+  font-size: 0.8rem;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+}
+
+footer div div {
+  width: 1rem;
+  height: 1rem;
+}
+
+footer div div img {
+  height: 100%;
+  width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */

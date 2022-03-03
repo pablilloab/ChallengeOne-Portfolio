@@ -1,0 +1,10 @@
+Figma
+https://www.figma.com/file/o2di04LyhIgUoAbkNLde80/Portafolio?node-id=1%3A29
+
+
+particles js
+
+
+para pdf
+
+https://stackoverflow.com/questions/13491657/javascript-library-to-convert-web-page-to-pdf
