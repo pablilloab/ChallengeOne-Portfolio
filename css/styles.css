@@ -99,6 +99,7 @@ a {
 
 #particles-js {
   height: 100%;
+  width: 100vw;
 }
 
 .menu {
@@ -116,6 +117,12 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 620px) {
+  .menu ul {
+    font-size: 0.5rem;
+  }
 }
 
 .menu ul li {
@@ -159,6 +166,7 @@ a {
 .banner h2 {
   color: #152736;
   font-size: 2rem;
+  text-align: center;
 }
 
 .banner h3 {
@@ -180,6 +188,12 @@ a {
   height: auto;
   margin: 0 auto;
   padding: 5px;
+}
+
+@media (max-width: 620px) {
+  .banner div {
+    width: 10rem;
+  }
 }
 
 .banner div img {
@@ -234,6 +248,13 @@ a {
       justify-content: space-around;
 }
 
+@media (max-width: 620px) {
+  .skills #skills-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .hobbies {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -251,6 +272,12 @@ a {
   position: absolute;
   width: 100vw;
   height: auto;
+}
+
+@media (max-width: 620px) {
+  .hobbies {
+    margin-top: 59rem;
+  }
 }
 
 .hobbies img {
@@ -301,6 +328,12 @@ a {
   height: auto;
 }
 
+@media (max-width: 620px) {
+  .formacion {
+    margin-top: 69rem;
+  }
+}
+
 .formacion img {
   width: 5rem;
   height: 5rem;
@@ -334,6 +367,17 @@ a {
           align-items: center;
 }
 
+@media (max-width: 620px) {
+  .formacion #formacion-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .formacion #formacion-wrapper div {
+    width: 6rem;
+    height: auto;
+  }
+}
+
 .formacion p {
   color: #152736;
   font-size: 0.8rem;
@@ -362,6 +406,12 @@ a {
   position: absolute;
   margin-top: 70rem;
   width: 100vw;
+}
+
+@media (max-width: 620px) {
+  .proyectos {
+    margin-top: 93rem;
+  }
 }
 
 .proyectos h2 {
@@ -394,6 +444,12 @@ a {
   transition: all 1s ease-in-out;
   height: 25rem;
   position: relative;
+}
+
+@media (max-width: 620px) {
+  .container .card {
+    height: 13rem;
+  }
 }
 
 .container .card .card__head {
@@ -471,6 +527,12 @@ a {
   width: 100vw;
 }
 
+@media (max-width: 620px) {
+  .contacto {
+    margin-top: 111rem;
+  }
+}
+
 .contacto div {
   width: 40px;
   height: auto;
@@ -520,6 +582,12 @@ footer {
   width: 100%;
   height: 50%;
   text-align: center;
+}
+
+@media (max-width: 620px) {
+  footer {
+    margin-top: 152rem;
+  }
 }
 
 footer h6 {

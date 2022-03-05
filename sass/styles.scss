@@ -41,7 +41,9 @@ a{
 
 #particles-js{
     height: 100%;
+    width:100vw;
 }
+
 .menu {
     background-color: #152736;
     z-index: 99999;
@@ -51,9 +53,12 @@ a{
         width: 100vw;
         display: flex;
         justify-content: center;
+        @media(max-width:620px){
+            font-size: 0.5rem;
+        }
         li{
             padding: 15px;
-            color:white;
+            color:white;            
         }
         li:hover{
             color:red;
@@ -81,7 +86,8 @@ a{
     }
     h2{
         color:  #152736;
-        font-size: 2rem;        
+        font-size: 2rem; 
+        text-align:center;       
         
     }
     h3{
@@ -101,6 +107,9 @@ a{
         height: auto;
         margin:0 auto;
         padding: 5px;
+        @media (max-width:620px){
+            width:10rem;
+        }
         img {
             width:100%;
         }
@@ -140,6 +149,10 @@ a{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        @media (max-width:620px){
+            flex-wrap: wrap;
+        }
+        
         
     }
 }
@@ -147,6 +160,9 @@ a{
 .hobbies{
     display: flex;
     margin-top:46rem;
+    @media (max-width:620px){
+        margin-top:59rem;
+    }
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
@@ -182,6 +198,9 @@ a{
 .formacion{
     display: flex;
     margin-top:57rem;
+    @media (max-width:620px){
+        margin-top:69rem;
+    }
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
@@ -212,6 +231,14 @@ a{
         justify-content: center;
         align-items: center;
         
+        @media(max-width:620px){
+            flex-wrap: wrap;
+            div{
+                width:6rem;
+                height: auto;
+            }
+        }
+        
     }
     p{
         color:#152736;
@@ -231,6 +258,9 @@ a{
     flex-direction: column;
     position: absolute;
     margin-top:70rem;
+    @media(max-width:620px){
+        margin-top: 93rem;
+    }
     width: 100vw;
     h2{
         text-align: center;
@@ -254,6 +284,9 @@ a{
     flex: 1;
     transition: all 1s ease-in-out;
     height: 25rem;
+    @media (max-width:620px){
+        height: 13rem;
+    }
     position: relative;    
   }
   .container .card .card__head {
@@ -301,7 +334,10 @@ a{
   .contacto {
     display: flex;
     position: absolute;
-     margin-top:100rem;     
+    margin-top:100rem; 
+    @media (max-width:620px){
+        margin-top: 111rem;
+    }    
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -351,6 +387,9 @@ footer {
     
     position: absolute;
     margin-top:138rem;
+    @media(max-width:620px){
+        margin-top: 152rem;
+    }
     width: 100%;
     height: 50%;
     text-align: center;
